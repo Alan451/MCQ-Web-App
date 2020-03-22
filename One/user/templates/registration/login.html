@@ -1,0 +1,15 @@
+{% extends 'registration/base.html' %}
+
+{% load crispy_forms_tags %}
+{% block page_header %}Login{% endblock %}
+{% block pages %}
+    <li><i class="glyphicon glyphicon-log-in"></i><a href="{% url 'user_login' %}">Login</a></li>
+{% endblock %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{form|crispy}}
+    <button type="submit" class="btn btn-success">Login</button>
+</form>
+    <a href="{% url 'password_reset' %}">Forgot Password?</a>
+{% endblock %}

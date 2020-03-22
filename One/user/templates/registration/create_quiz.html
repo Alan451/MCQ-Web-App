@@ -1,0 +1,14 @@
+{% extends 'registration/base.html' %}
+
+{% load crispy_forms_tags %}
+{% block page_header %}Create Quiz{% endblock %}
+{% block pages %}
+    <li><i class="glyphicon glyphicon-plus-sign"></i><a href="{% url 'user_create_quiz' %}">Create Quiz</a></li>
+{% endblock %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{ quiz_form|crispy }}
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+{% endblock %}

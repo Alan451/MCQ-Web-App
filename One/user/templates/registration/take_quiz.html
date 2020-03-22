@@ -1,0 +1,33 @@
+{% extends 'registration/base.html' %}
+
+{% load crispy_forms_tags %}
+{% block page_header %}{{question.quiz.name|title}}{% endblock %}
+{% block pages %}
+    <li><i class="glyphicon glyphicon-list-alt"></i><a href="{% url 'user_see_quiz' %}">Take Quiz</a></li>
+    <li><i class="glyphicon glyphicon-play-circle"></i>{{question.quiz.name}}</li>
+{% endblock %}
+{% block content %}
+    <h2>{{ q_no }}/{{ total }}</h2><br>
+    <h2>{{ question.question_title }}</h2><br>
+    <form method="post">
+        {% csrf_token %}
+        <input type="radio" name="choices" id="1" value="{{ question.choice1 }}">
+        <label for="1">{{ question.choice1 }}</label><br>
+
+        <input type="radio" name="choices" id="2" value="{{ question.choice2 }}">
+        <label for="2">{{ question.choice2 }}</label><br>
+
+        <input type="radio" name="choices" id="3" value="{{ question.choice3 }}">
+        <label for="3">{{ question.choice3 }}</label><br>
+
+        <input type="radio" name="choices" id="4" value="{{ question.choice4 }}">
+        <label for="4">{{ question.choice4 }}</label><br>
+        {% if q_no == total %}
+            <button type="submit" class="btn btn-success">Submit</button>
+        {% else %}
+            <button type="submit" class="btn btn-primary">Next</button>
+        {% endif %}
+    </form>
+
+
+{% endblock %}

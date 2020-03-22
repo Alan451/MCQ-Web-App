@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="755d8237-9e61-453d-aca0-d14b33d6912e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/user/migrations/0007_marks_scored.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/registration/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/registration/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/registration/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/registration/view_quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/registration/view_quiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="ProjectId" id="1Z9ge8x7NoTkBd0vbjZTLipDRcj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/templates/registration" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user/static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user/templates/registration" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="One" type="Python.DjangoServer" factoryName="Django server">
+      <module name="One" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="One.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="755d8237-9e61-453d-aca0-d14b33d6912e" name="Default Changelist" comment="" />
+      <created>1584256816823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584256816823</updated>
+      <workItem from="1584256818969" duration="2203000" />
+      <workItem from="1584260662262" duration="5161000" />
+      <workItem from="1584359469454" duration="8012000" />
+      <workItem from="1584437887871" duration="4317000" />
+      <workItem from="1584619001787" duration="15643000" />
+      <workItem from="1584685103097" duration="3862000" />
+      <workItem from="1584695734684" duration="18205000" />
+      <workItem from="1584728350258" duration="9109000" />
+      <workItem from="1584737906064" duration="758000" />
+      <workItem from="1584771257331" duration="12289000" />
+      <workItem from="1584815993369" duration="8915000" />
+      <workItem from="1584859787001" duration="7785000" />
+      <workItem from="1584869391693" duration="12548000" />
+      <workItem from="1584895675987" duration="11997000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584784977510">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584784977510" />
+    <state x="693" y="301" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584818429392">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="693" y="301" width="524" height="503" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584818429392" />
+    <state x="511" y="115" width="887" height="874" key="CommitChangelistDialog2" timestamp="1584815536531">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="511" y="115" width="887" height="874" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1584815536531" />
+    <state x="743" y="468" key="Github.CreateGistDialog" timestamp="1584807946874">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="743" y="468" key="Github.CreateGistDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584807946874" />
+    <state width="1874" height="332" key="GridCell.Tab.0.bottom" timestamp="1584908123591">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="332" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1584908123591" />
+    <state width="1874" height="332" key="GridCell.Tab.0.center" timestamp="1584908123591">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="332" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1584908123591" />
+    <state width="1874" height="332" key="GridCell.Tab.0.left" timestamp="1584908123590">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="332" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1584908123590" />
+    <state width="1874" height="332" key="GridCell.Tab.0.right" timestamp="1584908123591">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="332" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1584908123591" />
+    <state x="719" y="472" width="471" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584815564433">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="719" y="472" width="471" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1053@0.27.1920.1053" timestamp="1584815564433" />
+  </component>
+</project>

@@ -1,0 +1,21 @@
+{% extends 'registration/base.html' %}
+
+{% load crispy_forms_tags %}
+{% block page_header %}Add Question{% endblock %}
+{% block pages %}
+    <li><i class="glyphicon glyphicon-plus-sign"></i><a href="{% url 'user_create_quiz' %}">Create Quiz</a></li>
+    <li><i class="glyphicon glyphicon-plus"></i><a href="{% url 'user_add_question' %}">Add Questions</a></li>
+{% endblock %}
+{% block content %}
+    <h3>{{i}}/{{total}}</h3>
+<form method="post">
+    {% csrf_token %}
+    {{ question_form|crispy }}
+
+    {% if i == total %}
+        <button type="submit" class="btn btn-success">Done</button>
+    {% else %}
+        <button type="submit" class="btn btn-primary">Next</button>
+    {% endif %}
+</form>
+{% endblock %}

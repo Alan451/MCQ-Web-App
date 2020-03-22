@@ -1,0 +1,17 @@
+{% extends 'registration/base.html' %}
+
+{% load crispy_forms_tags %}
+{% block page_header %}View Quizzes{% endblock %}
+{% block pages %}
+    <li><i class="glyphicon glyphicon-list-alt"></i><a href="{% url 'user_view_quiz' %}">View Quiz</a></li>
+{% endblock %}
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <div style="margin-top: 200px;margin-left: 500px;">
+        <h2>Are you sure you want to delete the item?</h2>
+        <input class="btn btn-danger" style="padding: 12px 28px" type="submit" value="Confirm"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="btn btn-success" style="padding: 12px 28px" type="submit" value="Cancel"/>
+    </div>
+</form>
+{% endblock %}
