@@ -21,7 +21,7 @@ class UserType(models.Model):
 class Quiz(models.Model):
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=30)
-    number_of_questions = models.IntegerField(default=0)
+    number_of_questions = models.IntegerField(default=1)
     created_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
@@ -48,6 +48,6 @@ class Marks_scored(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE)
     marks = models.IntegerField(default=0)
-
+    total_marks = models.IntegerField(default=0)
     def __str__(self):
         return self.user.username + '-' + self.quiz.name

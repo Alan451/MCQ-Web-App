@@ -4,7 +4,6 @@
 {% block page_header %}View Quizzes{% endblock %}
 {% block pages %}
     <li><i class="glyphicon glyphicon-list-alt"></i><a href="{% url 'user_see_teachers' %}">Attempt Quiz</a></li>
-    <li><i class="glyphicon glyphicon-pencil"></i><a href="{% url 'user_see_quiz' teacher.pk %}">{{teacher}}</a></li>
 {% endblock %}
 {% block content %}
 <div class="row">
@@ -17,13 +16,13 @@
                       <div class="panel-body">
                         <div class="tab-pane" id="chartjs">
                       <div class="row">
-                        {% for i in quiz_objects %}
+                        {% for i in user_type_objects %}
                                 <div class="col-lg-6">
                                       <section class="panel">
                                           <div class="panel-body text-center " style="background-color: #a0ebad;">
-                                              <h3>{{ i }}</h3>
-                                              <br><a href="{% url 'user_take_quiz' i.pk 1 %}"><button class="btn btn-primary">
-                                              <i class="glyphicon glyphicon-play-circle"></i> Start The Quiz</button></a>
+                                              <h3>{{i.user|title}}</h3>
+                                              <br><a href="{% url 'user_see_quiz' i.user.pk %}"><button class="btn btn-primary">
+                                              <i class="glyphicon glyphicon-eye-open"></i> View Quizzes</button></a>
                                           </div>
     {#                                      <div class="panel-body text-center">#}
     {#                                          <canvas id="line" height="300" width="450"></canvas>#}

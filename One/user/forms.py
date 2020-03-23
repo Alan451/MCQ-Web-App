@@ -40,6 +40,8 @@ class QuizForm(forms.ModelForm):
 
     def clean(self):
         quiz = Quiz.objects.all().filter(name=self.cleaned_data['name'])
+        if self.cleaned_data['number_of_questions'] < 1:
+            raise ValidationError('Minimum Number of Questions is 1')
         if quiz:
             raise ValidationError('A Quiz already Exist with the provided name. Try Changing the Name.')
 
@@ -48,3 +50,10 @@ class QuestionForm(forms.ModelForm):
     class Meta:
         model = Question
         exclude = ['quiz', 'marks_not_attempted']
+
+    def clean(self):
+        correct = self.cleaned_data['correct_answer']
+        choices = [self.cleaned_data['choice1'], self.cleaned_data['choice2'], self.cleaned_data['choice3'],
+                   self.cleaned_data['choice4']]
+        if correct not in choices:
+            raise ValidationError('Correct Answer Does Not Match With Any of The Given Choices')

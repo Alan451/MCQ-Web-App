@@ -3,7 +3,8 @@
 {% load crispy_forms_tags %}
 {% block page_header %}{{question.quiz.name|title}}{% endblock %}
 {% block pages %}
-    <li><i class="glyphicon glyphicon-list-alt"></i><a href="{% url 'user_see_quiz' %}">Take Quiz</a></li>
+    <li><i class="glyphicon glyphicon-list-alt"></i><a href="{% url 'user_see_teachers' %}">Attempt Quiz</a></li>
+    <li><i class="glyphicon glyphicon-pencil"></i><a href="{% url 'user_see_quiz' question.quiz.created_by.pk %}">{{question.quiz.created_by}}</a></li>
     <li><i class="glyphicon glyphicon-play-circle"></i>{{question.quiz.name}}</li>
 {% endblock %}
 {% block content %}

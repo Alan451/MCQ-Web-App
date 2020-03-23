@@ -4,7 +4,7 @@
 {% block page_header %}Add Question{% endblock %}
 {% block pages %}
     <li><i class="glyphicon glyphicon-plus-sign"></i><a href="{% url 'user_create_quiz' %}">Create Quiz</a></li>
-    <li><i class="glyphicon glyphicon-plus"></i><a href="{% url 'user_add_question' %}">Add Questions</a></li>
+    <li><i class="glyphicon glyphicon-plus"></i><a href="{% url 'user_add_question' s i %}">Add Questions</a></li>
 {% endblock %}
 {% block content %}
     <h3>{{i}}/{{total}}</h3>

@@ -135,13 +135,13 @@
           </li>
     {% elif user.is_authenticated %}
         <li class="">
-            <a class="" href="{% url 'user_see_quiz' %}">
+            <a class="" href="{% url 'user_see_teachers' %}">
                           <i class="glyphicon glyphicon-pencil"></i>
-                          <span>Take Quiz</span>
+                          <span>Attempt Quiz</span>
                       </a>
           </li>
         <li class="">
-            <a class="" href="#">
+            <a class="" href="{% url 'user_see_results' %}">
                           <i class="glyphicon glyphicon-file"></i>
                           <span>See Results</span>
                       </a>
@@ -171,7 +171,7 @@
 	<!-- page start-->	
 	{% if messages %}
         {% for message in messages %}
-            {% if message.tags %}  <div class="alert alert-{{ message.tags }}" role="alert">{% endif %}{{ message }}
+            {% if message.tags %}  <div class="alert alert-{{ message.tags }}" role="alert">{% endif %}<strong>{{ message }}</strong>
         {% endfor %}
             </div>
         {% endif %}
