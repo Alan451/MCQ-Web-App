@@ -9,20 +9,20 @@
 {% endblock %}
 {% block content %}
     <h2>{{ q_no }}/{{ total }}</h2><br>
-    <h2>{{ question.question_title }}</h2><br>
+    <h2 style="color: black">{{ q_no }}. {{ question.question_title }}</h2><br>
     <form method="post">
         {% csrf_token %}
         <input type="radio" name="choices" id="1" value="{{ question.choice1 }}">
-        <label for="1">{{ question.choice1 }}</label><br>
+        <label for="1"><h4>{{ question.choice1 }}</h4></label><br>
 
         <input type="radio" name="choices" id="2" value="{{ question.choice2 }}">
-        <label for="2">{{ question.choice2 }}</label><br>
+        <label for="2"><h4>{{ question.choice2 }}</h4></label><br>
 
         <input type="radio" name="choices" id="3" value="{{ question.choice3 }}">
-        <label for="3">{{ question.choice3 }}</label><br>
+        <label for="3"><h4>{{ question.choice3 }}</h4></label><br>
 
         <input type="radio" name="choices" id="4" value="{{ question.choice4 }}">
-        <label for="4">{{ question.choice4 }}</label><br>
+        <label for="4"><h4>{{ question.choice4 }}</h4></label><br>
         {% if q_no == total %}
             <button type="submit" class="btn btn-success">Submit</button>
         {% else %}

@@ -15,6 +15,8 @@ urlpatterns = [
     path('see_teachers/<int:s>/', views.see_quizzes, name="user_see_quiz"),
     path('see_teachers/', views.see_teachers, name="user_see_teachers"),
     path('see_teachers/<int:s>/<int:q_no>/', views.take_quizzes, name="user_take_quiz"),
+    path('standings/', views.see_standings, name="user_standings"),
+    path('standings/<int:i>/', views.standings, name="user_standings_quiz"),
     path('', include('django.contrib.auth.urls')),
 
 ]

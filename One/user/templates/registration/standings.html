@@ -1,0 +1,29 @@
+{% extends 'registration/base.html' %}
+
+{% load crispy_forms_tags %}
+{% block page_header %}{{quiz_object}} standings{% endblock %}
+{% block pages %}
+    <li><i class="glyphicon glyphicon-star"></i><a href="{% url 'user_standings' %}">Standings</a></li>
+    <li><i class="glyphicon glyphicon-user"></i><a href="{% url 'user_see_quiz' quiz_object.created_by.pk %}">{{quiz_object.created_by}}</a></li>
+    <li><i class="glyphicon glyphicon-file"></i>{{quiz_object}}</li>
+{% endblock %}
+{% block content %}
+<table class="table">
+  <thead>
+    <tr>
+      <th style="color: green" scope="col">#</th>
+      <th style="color: green" scope="col">Username</th>
+      <th style="color: green" scope="col">Marks Scored</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for i in marks_objects %}
+    <tr>
+      <th scope="row">{{ forloop.counter }}</th>
+      <td><a href="#">{{i.user}}</a></td>
+      <td>{{i.marks}}/{{ i.total_marks }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'registration/base.html' %}
+
+{% load crispy_forms_tags %}
+{% block page_header %}Standings{% endblock %}
+{% block pages %}
+    <li><i class="glyphicon glyphicon-star"></i><a href="{% url 'user_standings' %}">Standings</a></li>
+{% endblock %}
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    <label for="quizzes"><h2>Select Quiz to See Standings</h2></label><br><select class="form-control form-control-lg" id="quizzes" name="Quiz_id">
+        {% for i in quizzes %}
+            <option value="{{ i.pk }}">{{ i.name }} by {{ i.created_by }}</option>
+        {% endfor %}
+    </select>
+    <br>
+    <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-tree-conifer"></i> See Leader Board</button>
+
+</form>
+
+{% endblock %}

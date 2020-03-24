@@ -25,6 +25,8 @@ class UserForm(forms.ModelForm):
             raise ValidationError
         if word != repass:
             raise ValidationError('Passwords do not match')
+        if User.objects.all().filter(username=self.cleaned_data['username']):
+            raise ValidationError('This Username is already taken')
 
 
 class UserTypeForm(forms.ModelForm):

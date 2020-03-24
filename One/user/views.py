@@ -160,7 +160,6 @@ def see_quizzes(request, s):
     marks = models.Marks_scored.objects.all()
     teacher = models.User.objects.get(pk=s)
     quiz_objects = models.Quiz.objects.all().filter(created_by=teacher)
-    request.session['count'] = 0
     return render(request, 'registration/see_quiz.html',
                   {'quiz_objects': quiz_objects, 'marks': marks, 'teacher': teacher})
 
@@ -185,8 +184,7 @@ def take_quizzes(request, s, q_no):
     else:
         marks = models.Marks_scored.objects.get(quiz=quiz_object, user=request.user)
     question = models.Question.objects.get(pk=primary_key)
-    print(request.session['count'])
-    request.session['count'] += question.marks_correct
+    marks.total_marks += question.marks_correct
     if request.method == "POST":
         if request.POST['choices'] == question.correct_answer:
             marks.marks += question.marks_correct
@@ -195,11 +193,9 @@ def take_quizzes(request, s, q_no):
             marks.marks += question.marks_incorrect
         marks.save()
         if q_no == total:
-            marks.total_marks = int(request.session['count'] / 2)
-            marks.save()
             messages.success(request,
                              "You Have Successfully Completed the Quiz. You Have scored " + str(marks.marks)
-                             + " marks out of " + str(int(request.session['count'] / 2)))
+                             + " marks out of " + str(marks.total_marks))
             return redirect('user_home')
         else:
             return redirect('../' + str(q_no + 1))
@@ -211,3 +207,18 @@ def take_quizzes(request, s, q_no):
 def see_results(request):
     marks_objects = models.Marks_scored.objects.all().filter(user=request.user)
     return render(request, 'registration/see_results.html', {'marks_objects': marks_objects})
+
+
+def see_standings(request):
+    quizzes = models.Quiz.objects.all()
+    if request.method == "POST":
+        quiz_id = request.POST['Quiz_id']
+        return redirect('./' + str(quiz_id))
+    return render(request, 'registration/see_standings.html', {'quizzes': quizzes})
+
+
+def standings(request, i):
+    quiz_object = models.Quiz.objects.get(pk=i)
+    marks_o = models.Marks_scored.objects.all().filter(quiz=quiz_object)
+    marks_objects = marks_o.order_by('-marks')
+    return render(request, 'registration/standings.html', {'marks_objects': marks_objects, 'quiz_object': quiz_object})

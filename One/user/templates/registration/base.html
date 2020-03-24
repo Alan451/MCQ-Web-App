@@ -78,7 +78,7 @@
                                 <i class="glyphicon glyphicon-user"></i>
                             </span>
                             <span class="">{{ user.username|title }}</span>
-                            <b class="caret"></b>
+                            <b class="caret "></b>
                         </a>
             <ul class="dropdown-menu extended logout">
 {#              <div class="log-arrow-up"></div>#}
@@ -147,6 +147,13 @@
                       </a>
           </li>
     {% endif %}
+        <li class="">
+            <a class="" href="{% url 'user_standings' %}">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <span>Standings</span>
+                      </a>
+          </li>
+
 
         </ul>
         <!-- sidebar menu end-->

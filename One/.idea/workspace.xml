@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="755d8237-9e61-453d-aca0-d14b33d6912e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user/migrations/0008_marks_scored_total_marks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/migrations/0009_auto_20200323_0803.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/templates/registration/add_question.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/registration/add_question.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/templates/registration/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/registration/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/templates/registration/delete_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/registration/delete_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/templates/registration/see_quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/registration/see_quiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/registration/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/templates/registration/take_quiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/registration/take_quiz.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
@@ -111,7 +107,8 @@
       <workItem from="1584869391693" duration="12548000" />
       <workItem from="1584895675987" duration="11997000" />
       <workItem from="1584908999141" duration="3569000" />
-      <workItem from="1584940589419" duration="10568000" />
+      <workItem from="1584940589419" duration="12257000" />
+      <workItem from="1585035553558" duration="9979000" />
     </task>
     <servers />
   </component>
@@ -135,25 +132,29 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="743" y="468" key="Github.CreateGistDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1584807946874" />
-    <state width="1874" height="332" key="GridCell.Tab.0.bottom" timestamp="1584956480313">
+    <state width="1874" height="359" key="GridCell.Tab.0.bottom" timestamp="1585050401182">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="332" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1584956480313" />
-    <state width="1874" height="332" key="GridCell.Tab.0.center" timestamp="1584956480312">
+    <state width="1874" height="359" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1585050401182" />
+    <state width="1874" height="359" key="GridCell.Tab.0.center" timestamp="1585050401182">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="332" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1584956480312" />
-    <state width="1874" height="332" key="GridCell.Tab.0.left" timestamp="1584956480312">
+    <state width="1874" height="359" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1585050401182" />
+    <state width="1874" height="359" key="GridCell.Tab.0.left" timestamp="1585050401181">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="332" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1584956480312" />
-    <state width="1874" height="332" key="GridCell.Tab.0.right" timestamp="1584956480313">
+    <state width="1874" height="359" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1585050401181" />
+    <state width="1874" height="359" key="GridCell.Tab.0.right" timestamp="1585050401182">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="332" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1584956480313" />
+    <state width="1874" height="359" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1585050401182" />
     <state x="719" y="472" width="471" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584815564433">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="719" y="472" width="471" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1053@0.27.1920.1053" timestamp="1584815564433" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1585041255447">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1585041255447" />
   </component>
 </project>
